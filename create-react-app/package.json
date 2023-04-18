@@ -1,10 +1,10 @@
 {
   "name": "cra-example",
-  "version": "0.0.2-alpha.0",
+  "version": "0.0.1",
   "private": true,
   "type": "module",
   "dependencies": {
-    "@debox-global/react": "0.0.2-alpha.0",
+    "@debox-global/react": "latest",
     "ethers": "5.7.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",

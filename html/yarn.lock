@@ -115,10 +115,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@debox-global/core@0.0.2-alpha.0":
-  version "0.0.2-alpha.0"
-  resolved "https://registry.yarnpkg.com/@debox-global/core/-/core-0.0.2-alpha.0.tgz#7b7158ed2f69c2f11dcc251bdd184479c093862f"
-  integrity sha512-yuF169b8rh4b9KoAkyw2DRYb8VSq0UrbbrA0JRKzbR+BfEh3La2yK6RtGgnQZF01sjQBDNgMUneZvhsOVV5+Dw==
+"@debox-global/core@0.0.2-alpha.1":
+  version "0.0.2-alpha.1"
+  resolved "https://registry.yarnpkg.com/@debox-global/core/-/core-0.0.2-alpha.1.tgz#d959cd7ed971c4c345f51534401d3cb3682c1045"
+  integrity sha512-QB/MTc6wHkqzIOupWX5+0lQbfjOlhXQso8tWLh4AydX1CCmuT6cdHLjPniTnrUC42BvZ9b23eUGSvFvBlxz3hA==
   dependencies:
     "@wagmi/core" "0.9.7"
     "@walletconnect/ethereum-provider" "2.5.2"
@@ -128,20 +128,20 @@
     pubsub-js "^1.9.4"
     valtio "1.10.3"
 
-"@debox-global/html@0.0.2-alpha.0":
-  version "0.0.2-alpha.0"
-  resolved "https://registry.yarnpkg.com/@debox-global/html/-/html-0.0.2-alpha.0.tgz#98ab35272ee6ba3993a0c9db6ee0e52597e8e7aa"
-  integrity sha512-s+mENJPxf6JPl3Hmq0C6A49gpued60tC5b2NKkQDcRCl01drLlwnfcwXxscWpGf95xx8qxyCdVjUxBla7IDcPQ==
+"@debox-global/html@latest":
+  version "0.0.2-alpha.1"
+  resolved "https://registry.yarnpkg.com/@debox-global/html/-/html-0.0.2-alpha.1.tgz#7c5a1cb8e5bcc44b9d04208d62f49497ed7e6270"
+  integrity sha512-n1koQlXd8LQZPepOZgrovSIMxyLGYQvrOKRdaxJTnDvLA6wGF/NdeXBQzYI10bh+7Nxy4rC4tt3/sDDQXjkqrQ==
   dependencies:
-    "@debox-global/core" "0.0.2-alpha.0"
-    "@debox-global/ui" "0.0.2-alpha.0"
+    "@debox-global/core" "0.0.2-alpha.1"
+    "@debox-global/ui" "0.0.2-alpha.1"
 
-"@debox-global/ui@0.0.2-alpha.0":
-  version "0.0.2-alpha.0"
-  resolved "https://registry.yarnpkg.com/@debox-global/ui/-/ui-0.0.2-alpha.0.tgz#3419a4d496a76f0313a334722a033946b9753e09"
-  integrity sha512-PCnCpB18EX6Qhd3ZdgXgq4WKHI/veFK4GOPKIslOwJ+wXRdP0FdUfozBl8MXB02NwZXKBrwA6G43HT/MFuFJ3w==
+"@debox-global/ui@0.0.2-alpha.1":
+  version "0.0.2-alpha.1"
+  resolved "https://registry.yarnpkg.com/@debox-global/ui/-/ui-0.0.2-alpha.1.tgz#1f6fc6550443abc88cc991d1572c0037b6e79645"
+  integrity sha512-e5hNeLNO/DBn0+ItmvGbVglzjjK6x3WEUu64qnmRzvSOJ+JAFowneWooNYyZT1csEPBJubB4SsI1ibFtPNoRYw==
   dependencies:
-    "@debox-global/core" "0.0.2-alpha.0"
+    "@debox-global/core" "0.0.2-alpha.1"
     dayjs "^1.11.7"
     lit "2.6.1"
 
