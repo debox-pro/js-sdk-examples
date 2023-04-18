@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Example</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+  </head>
+  <body style="margin: 0">
+    <div id="app">
+      <header>
+        <h1 style="margin: 0">DAPP Custom Header</h1>
+      </header>
+      <main style="min-height: 70vh; border: 1px solid #777">
+        <debox-chat style="height: 70vh; display: block"></debox-chat>
+      </main>
+      <footer>
+        <button onclick="window.deboxChat.logout()">Custom Logout</button>
+        <button
+          onclick="window.deboxChat.setTheme({
+            themeMode: 'dark'
+          })"
+        >
+          Change theme to dark
+        </button>
+        <button
+          onclick="window.deboxChat.setTheme({
+            themeMode: 'light'
+          })"
+        >
+          Change theme to light
+        </button>
+        <button
+          onclick="window.deboxChat.setTheme({
+            themeColor: 'default'
+          })"
+        >
+          Change theme to default
+        </button>
+        <button
+          onclick="window.deboxChat.setTheme({
+            themeColor: 'green'
+          })"
+        >
+          Change theme to green
+        </button>
+      </footer>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
