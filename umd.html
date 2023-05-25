@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML UMD Example</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <!-- TODO: Introduce the umdjs file yourself -->
+    <script src="./html/node_modules/@debox-global/html/dist/index.umd.js"></script>
+    <script>
+      function getQueryVariable(variable) {
+        const query = window.location.search.substring(1)
+        const vars = query.split('&')
+        for (let i = 0; i < vars.length; i++) {
+          const pair = vars[i].split('=')
+          if (pair[0] === variable) {
+            return pair[1]
+          }
+        }
+
+        return false
+      }
+
+      window.deboxChat = new DeBoxChat.DeBoxChat(
+        {
+          dao: {
+            contractAddress: getQueryVariable('contractAddress'),
+            chainId: getQueryVariable('chainId'),
+            source: getQueryVariable('source')
+          },
+          projectId: getQueryVariable('projectId'),
+          urls: {
+            api: getQueryVariable('api'),
+            ws: getQueryVariable('ws')
+          }
+        },
+        window.ethereum
+      )
+    </script>
+  </head>
+  <body style="margin: 0">
+    <div id="app">
+      <header>
+        <h1 style="margin: 0">DAPP Custom Header</h1>
+      </header>
+      <main style="min-height: 70vh; border: 1px solid #777">
+        <debox-chat style="height: 70vh; display: block"></debox-chat>
+      </main>
+      <footer>
+        <button onclick="window.deboxChat.logout()">Custom Logout</button>
+        <button
+          onclick="window.deboxChat.setTheme({
+            themeMode: 'dark'
+          })"
+        >
+          Change theme to dark
+        </button>
+        <button
+          onclick="window.deboxChat.setTheme({
+            themeMode: 'light'
+          })"
+        >
+          Change theme to light
+        </button>
+        <button
+          onclick="window.deboxChat.setTheme({
+            themeColor: 'default'
+          })"
+        >
+          Change theme to default
+        </button>
+        <button
+          onclick="window.deboxChat.setTheme({
+            themeColor: 'green'
+          })"
+        >
+          Change theme to green
+        </button>
+      </footer>
+    </div>
+  </body>
+</html>
